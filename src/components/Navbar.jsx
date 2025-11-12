@@ -40,7 +40,7 @@ const Navbar = () => {
     useEffect(() => {
       gsap.to(navContainerRef.current, {
         y: isNavVisible ? 0 : -100,
-        opacity: isNavVisible ? 0 : 0,
+        opacity: isNavVisible ? 1 : 0,
         duration: 0.2,
       })
     }, [isNavVisible])
